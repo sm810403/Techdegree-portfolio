@@ -25,11 +25,12 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
+  background: transparent;
+  min-height: 40px;
+  padding: 20px 10px 10px;
+  position: absolute;
   text-align: center;
+  z-index: 1;
 }
 .nav {
   display: flex;
@@ -47,20 +48,25 @@ a:hover {
     text-shadow: 0 5px 10px white;
     transition: transform .4s ease;
 }
+.nav .home {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
 .nav .name:hover { 
   transform: rotate(-10deg);
 }
 .nav li {
-  padding: 5px 10px 10px 10px;
-  transition: all .4s ease;
+  padding: 5px 20px 10px 20px;
+  transition: all .2s ease;
 }
 .nav li:hover {
   transform: translateY(-3px);
-  text-shadow: 0 2px 5px white;
+  text-shadow: 0 2px 5px lightcoral;
 }
 .nav li:active {
   transform: translateY(-1px);
-  text-shadow: 0 1px 2px white;
+  text-shadow: 0 1px 2px lightcoral;
 }
 .nav a {
   transition: all .5s;
@@ -75,47 +81,55 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
-  width: 200px;
-  height: 200px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .5s ease;
   position: relative;
 }
-header .profile-image:hover {
+header .profile-image:hover { 
   transform: scale(1.2) rotate(5deg);
-}
+} 
 .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: 20px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: transparent;
+  color: white;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+.card img {
+  max-width: 100%;
 }
+.card:hover {
+  border-color: rgba(230, 12, 157, 0.37);
+  box-shadow: 0 10px 20px #000;
+} 
 
 ul.skills {
   padding: 0;
@@ -139,6 +153,7 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  background-color: rgb(228, 222, 222)
 }
 
 footer .copyright {

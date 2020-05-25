@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #222;
+  color: rgb(34, 34, 34);
   background: #f7f5f0;
 }
 /* Link Styles */
@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -44,9 +44,23 @@ a:hover {
     display: block;
     margin-right: auto;
     color: white;
+    text-shadow: 0 5px 10px white;
+    transition: transform .4s ease;
+}
+.nav .name:hover { 
+  transform: rotate(-10deg);
 }
 .nav li {
   padding: 5px 10px 10px 10px;
+  transition: all .4s ease;
+}
+.nav li:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 2px 5px white;
+}
+.nav li:active {
+  transform: translateY(-1px);
+  text-shadow: 0 1px 2px white;
 }
 .nav a {
   transition: all .5s;
@@ -57,7 +71,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: linear-gradient(to top, rgba(126, 123, 123, 0.452), transparent),url('images/seoul.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -67,11 +81,12 @@ header {
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
+  position: relative;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);

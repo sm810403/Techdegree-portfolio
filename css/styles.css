@@ -80,6 +80,7 @@ header {
   text-align: center;
   background: linear-gradient(to top, rgba(126, 123, 123, 0.452), transparent),url('../images/seoul.jpg') no-repeat top center ;
   background-size: cover;
+  background-attachment: fixed;
   overflow: hidden;
   padding-top: 60px;
   height: 100vh;

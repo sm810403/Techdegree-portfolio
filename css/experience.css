@@ -10,7 +10,7 @@ body, html {
 }
 .wrapper {
     height: 100vh;
-    background: linear-gradient(rgba(146, 180, 145, 0.63), transparent), url("images/neon.jpg");
+    background: linear-gradient(rgba(146, 180, 145, 0.63), transparent), url("../images/study.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -24,8 +24,18 @@ body, html {
     font-weight: 800;
     border-bottom: 2px solid lightcoral;
     text-shadow: 0 5px 10px lightcoral;
-
-
+    animation: moveInBottom 1.4s ease .6s;
+    animation-fill-mode: backwards;
+}
+@keyframes moveInBottom {
+    0% {
+        transform: translateY(-50px);
+        opacity:0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 .box {
     position: absolute;

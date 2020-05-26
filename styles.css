@@ -45,6 +45,7 @@ a:hover {
     display: block;
     margin-right: auto;
     color: white;
+    font-size: larger;
     text-shadow: 0 5px 10px white;
     transition: transform .4s ease;
 }
@@ -107,11 +108,88 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 20px auto;
-} 
+}
+
 .location {
   background-color: transparent;
   color: white;
 }
+.year {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 80px;
+  font-weight: 500;
+  color: #ddd;
+  text-shadow: 0 5px 25px pink;
+  animation: moveInLeft 1.5s ease-in-out 1.5s;
+  animation-fill-mode: backwards;
+}
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateZ(7px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+}
+.first-text {
+  position: absolute;
+  bottom: 35%;
+  left: 5%;
+  font-size: 80px;
+  font-weight: 500;
+  color: #ddd;
+  text-shadow: 0 5px 25px pink;
+  animation: moveInLeft 1.5s ease-in-out 1s;
+  animation-fill-mode: backwards;
+}
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateZ(7px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+}
+.adventure {
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  font-size: 80px;
+  font-weight: 500;
+  color: #ddd;
+  text-shadow: 0 5px 25px pink;
+  animation: moveInLeft 1.5s ease-in-out 1.2s;
+  animation-fill-mode: backwards;
+}
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+  70% {
+    transform: translateZ(7px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0px);
+    opacity: 1;
+  }
+}
+
 
 .card {
   margin: 30px;
@@ -123,6 +201,7 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .card img {
   max-width: 100%;
 }
@@ -153,7 +232,7 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
-  background-color: rgb(228, 222, 222)
+  background-color: rgba(228, 222, 222, 0.301)
 }
 
 footer .copyright {
@@ -181,14 +260,10 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
+
 a.github {
   background-image: url(images/github.svg);
+  
 }
 a.social:hover {
   opacity: 1;

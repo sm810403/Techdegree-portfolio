@@ -36,6 +36,8 @@ body, html {
     background-color: black;
     color: white;
     overflow: hidden;
+    box-shadow: 0 10px 20px black;
+    border-radius: 10px;
 }
 .challenge img, .challenge .text {
     width: 100%;

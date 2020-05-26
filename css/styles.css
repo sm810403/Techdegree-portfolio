@@ -116,7 +116,7 @@ header .profile-image:hover {
 }
 .year {
   position: absolute;
-  bottom: 5%;
+  bottom: 35%;
   left: 5%;
   font-size: 80px;
   font-weight: 500;
@@ -141,7 +141,7 @@ header .profile-image:hover {
 }
 .first-text {
   position: absolute;
-  bottom: 35%;
+  top: 8%;
   left: 5%;
   font-size: 80px;
   font-weight: 500;
@@ -166,7 +166,7 @@ header .profile-image:hover {
 }
 .adventure {
   position: absolute;
-  bottom: 25%;
+  top: 17%;
   left: 5%;
   font-size: 80px;
   font-weight: 500;

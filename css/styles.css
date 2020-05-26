@@ -211,23 +211,17 @@ header .profile-image:hover {
   box-shadow: 0 10px 20px #000;
 } 
 
-/* ul.skills {
-  padding: 0;
-  text-align: center;
+.middle-image {
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+  background: url("../images/landscape.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  transform: skew(-5deg);
 }
 
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
-} */
 .content {
   height: 50vh;
   background-image: linear-gradient(to right, rgb(220, 223, 231), rgb(70, 110, 218));

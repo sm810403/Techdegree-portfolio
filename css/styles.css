@@ -223,17 +223,23 @@ header .profile-image:hover {
 }
 
 .content {
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  /* height: 50vh; */
   background-image: linear-gradient(to right, rgb(220, 223, 231), rgb(70, 110, 218));
   margin-top: 60px;
   margin-bottom: 80px;
+  padding: 30px 0;
 }
-.content h1 {
-  padding: 40px;
+.content .skills {
+  padding: 10px;
+  margin-bottom: 30px;
+
 }
 .skill-box {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .skill {
   position: relative;
